@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&family=Lato&family=Outfit:wght@200&family=Playfair+Display:ital@1&family=Poppins:wght@400;500&family=Raleway:wght@300;400;600&family=Varela+Round&family=Yuji+Hentaigana+Akebono&display=swap');
+
+body{
+    margin: 0;  
+                    /* Faire disparaitre toutes les marges */
+    padding: 0;
+
+    font-family: 'Raleway',sans-serif;
+    
+}
+
+/* Style du header, juste en bas de la bar de navigation */
+
+header {
+
+     display: flex; 
+     flex-direction: column;
+     align-items: center;
+     background-size: cover;
+     background-color: cadetblue;
+     padding: 40px;
+     color: #ffffff;
+     
+
+    
+
+}
+
+header button {
+
+padding: 9px 50px;
+background-color: #000000;
+ font-family: 'Raleway', sans-serif;
+ border: transparent;
+ cursor: pointer;
+ color: white;
+ text-decoration: none;
+}
+
+header button:hover {
+    background-color: rgba(158, 11, 11, 0.829);    
+    transition: all 0.299s;
+}
+
+header h4{
+    margin-top: -20px;
+    font-size: 22px;
+    text-align: center;
+    color: #ffffff;
+   
+    font-family: 'Playfair display', serif;
+}
+
+header h1 {
+    font-family: 'Playfair display', serif;
+    font-size: 43px;
+    text-shadow: 1px 1px 1px #fff,
+    1px 2px 3px #fff,
+    1px 3px 5px #fff;
+    letter-spacing: 1rem;
+}
+
+/* Style de la bar de navigation */
+nav{
+    display: flex; /* Disposition des elements de la bar de navigation en lignes */
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 4px solid lightgray;
+    
+    
+}
+
+nav h1{
+    font-family: 'Playfair display', sans-serif;
+    color: #717171;
+    font-family:50px;
+}
+
+nav .onglets a{
+
+    text-decoration: none; /* Faire disparaitre les traits apparaissant sous les liens */
+    color: #000;
+    margin-right: 10px; /* Separation entre les elements de l'onglets */
+    border-bottom: 1px solid #000;
+    padding-bottom: 5px; /* Faire paraitre des traits en bas des onglets */
+    font-family: 'Raleway', sans-serif;
+    padding: 10px;
+
+}
+
+nav .onglets a:hover {
+
+    color: rgba(184, 20, 20, 0.82);
+}
+
+.onglets button {
+
+    padding: 9px 50px;
+    background-color: black;
+    font-family: 'Raleway', sans-serif;
+    border: transparent;
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff; /* Couleur blanche by Css Colors */
+
+}
+
+.onglets button:hover {
+
+    background-color: rgba(158, 11, 11, 0.829);
+    transition: all 0.299s;
+}
+
+/* Style du footer */
+
+footer {
+
+    margin-top: 40px;
+    border-top: 5px solid lightgray;
+    background-color: #000000;
+    color: #fff;
+    padding: 25px 100px;
+}
+
+footer h1 {
+
+    font-family: 'Raleway', sans-serif;
+    font-size: 34px;
+    border-bottom: 1px solid #fff;
+    width: 23%;
+    padding-bottom: 5px; /* Espacement entre un element d'en haut et un element d'un bas */
+    
+}
+
+footer .services {
+
+    margin-top: -10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer .services .services{
+
+     margin-right: 30px;
+}
+
+footer .services .service p{
+    max-width: 500px;
+    padding-right: 30px;
+}
+
+@media screen and (max-width:680px) /* Modification de la taille d'ecran 
+ de l'utilisateur (on phone) */ {
+    nav .onglets{
+        margin-left: 0px;
+        margin-bottom: 20px; 
+    }
+
+    .main .card{
+        margin: 10px;
+    }
+    .main .content .card .right img{
+        height: 200px;
+        width: 100%;
+        margin-top: 0px;
+    }
+
+    .main .content .card{
+        display: block;
+    }
+
+    footer{
+        padding: 30px;
+    }
+
+    footer h1{
+        border-bottom: 100%;
+    }
+ }
+
+nav .onglets {
+
+    margin-top: 3px;
+    margin-left: 380px; /* Espacement de 300px entre les liens et 
+     "Driplin Plug" (h1) */
+
+} 
+
+ /* Style des elements "cartes" en bas du header */
+
+.main{ 
+
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main  .card .right img {
+    height: 300px;
+    width: 380px;
+}
+
+.main .content .card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 19px;
+    
+}
+
+.main .content .card .left{
+
+    flex: 0 0 30%;  /* disposition en colonne , si flex 1 : 30%,
+                                                alors flex 2 : 70% = 100% (pour qu'ils 
+                                                soient superposés */ 
+    padding: 59px;
+    background-color: darkslategray;
+    color: #fff;
+    
+}
+
+.main .content .card .left a:hover{
+
+    color: white;
+    transition: all 0.64435s;
+    transform: translate3d(-12px);
+}
+
+.main .content .card.right{
+
+    flex: 0 0 70%;  /* flex 2 */
+}
+
+
+footer input {
+
+    width: 700px;
+    height: 32px;
+    font-family: 'Raleway', sans-serif;
+    margin-left: 160px;
+    margin-top: 16px;
+    padding: 10px;
+}
+
+footer fieldset button{
+
+    width: 500px;
+    height: 39px;
+    font-family: 'Raleway', sans-serif;
+    margin-left: 265px;
+    margin-top: 20px;
+    padding: 6px;
+    background-color: skyblue;
+}
+
+footer fieldset button a{
+
+    text-decoration: none;
+    color: #000000;
+}
+
+footer fieldset button:hover{
+    background-color: green;
+    transition: all 0.299s;
+    cursor: pointer;
+}
+
+footer fieldset{
+height: 280px;
+}
+
+footer fieldset legend{
+
+    font-family: 'Playfair Display',serif;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+}
+
+footer .adress p{
+
+    display: inline-block;
+    border-bottom: 2px solid whitesmoke;
+    color: #fff;
+    padding-bottom: 9px;
+    
+}
+footer .adress p a{
+    text-decoration: none;
+    color: white;
+   
+} 
+
+footer .adress p a:hover{
+
+    color: maroon;
+    transition: all 0.19998s;
+}
